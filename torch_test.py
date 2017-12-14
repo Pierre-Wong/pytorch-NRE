@@ -5,11 +5,25 @@ import numpy as np
 import time
 import datetime
 import os
-import network
 #from sklearn.metrics import average_precision_score
 from relation import remodel
 import copy
 
+class Settings(object):
+
+	def __init__(self):
+
+		self.vocab_size = 114042
+		self.num_steps = 70
+		self.num_epochs = 50
+		self.num_classes = 53
+		self.gru_size = 230
+		self.keep_prob = 0.5
+		self.num_layers = 1
+		self.pos_size = 5
+		self.pos_num = 123
+		# the number of entity pairs of each batch during training or testing
+        self.big_num = 50
 
 
 
@@ -17,7 +31,7 @@ if __name__ == "__main__":
     # ATTENTION: change pathname before you load your model
     
 
-    test_settings = network.Settings()
+    test_settings =Settings()
     test_settings.vocab_size = 114044
     test_settings.num_classes = 53
     test_settings.big_num =20
