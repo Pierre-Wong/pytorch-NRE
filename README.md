@@ -13,3 +13,5 @@ which can be download from repository https://github.com/thunlp/TensorFlow-NRE.
 
 For training,you need to type python3 relation.py and torch_test.py is for testing.
 A pre-train model  "model10300.pth" is given.
+
+The code has been tested for pytorch 0.3.0
