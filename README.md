@@ -1,4 +1,4 @@
-# pytorch-NER
+# pytorch-NRE
 Neural Relation Extraction in Pytorch
 
 A pytorch version of https://github.com/thunlp/TensorFlow-NRE
